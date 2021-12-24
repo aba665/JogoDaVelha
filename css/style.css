@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 98vh;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+#wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+.square{
+    background: darkred;
+    width: 25vh;
+    height: 25vh;
+    border: 2px solid rgb(255, 253, 254);
+    transition: 0.5s ease-in-out;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 25vh;
+    box-shadow: 2px 4px 4px black;
+}
+.square:hover{
+    background: #ffffffbb;
+    border: 3px solid rgb(0, 0, 0);
+    cursor: pointer;
+    transform: translateY(-5px);
+    background-color: #ffffff;
+    
+
+
+}
+.sq1{
+    background: rgb(22, 131, 158);
+}
+.sq3{
+    background: rgb(22, 131, 158);
+}
+.sq5{
+    background: rgb(22, 131, 158);
+}
+.sq7{
+    background: rgb(22, 131, 158);
+}
+.sq9{ 
+    background: rgb(22, 131, 158);
+}
+.primaryTxt{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    margin: 10px 0;
+}
+.paragraf{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+}
+@media(max-width: 640px){
+    #wrap{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #container{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        margin-left: 70px;
+    }
+    .square{
+        width: 13vh;
+        height: 16vh;
+        font-size: 2rem;
+        line-height: 16vh;
+
+    }
+    .paragraf{
+        font-size: 1rem;
+    }
+}
+@media(min-height: 2340px){
+    #container{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        margin-left: 20px;
+    }
+    .square{
+        width: 13vh;
+        height: 20vh;
+        font-size: 4rem;
+        line-height: 20vh;
+
+    }
+    .paragraf{
+        font-size: 3rem;
+    }
+}
